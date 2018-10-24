@@ -151,6 +151,13 @@ class Main
          */
         System.out.println("** Task 7**");
         
+    
+            for (int i=0 ; i<ar1.length ; i++)
+        {
+            if ( ar1[i]%2==1)
+                ar1[i] *=10;
+        }
+        
         for (int i=0 ; i<ar1.length ; i++)
             System.out.println(ar1[i]);
         
@@ -236,6 +243,7 @@ class Main
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
+        System.out.println(" ** Task 11 **");
         
         
         /*
