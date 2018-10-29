@@ -261,6 +261,7 @@ class Main
         for (int i=0 ; i<ar2.length ; i++)
             System.out.println("ar2["+i+"] = "+ar2[i]);
         
+    
         
         /*
          * Task 12: 
@@ -285,6 +286,56 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
+         String[] ar5=new String[16];
+        ar5[0]="Four";
+        ar5[1]="score";
+        ar5[2]="and";
+ ar5[3]="seven";
+ ar5[4]="years";
+ ar5[5]="ago";
+ ar5[6]="our";
+ ar5[7]="fathers";
+ ar5[8]="brought";
+ ar5[9]="forth";
+ ar5[10]="on";
+ ar5[11]="this";
+ ar5[12]="continent";
+ ar5[13]="a";
+ ar5[14]="new";
+ ar5[15]="nation";
+int count5=0;
+ 
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+ // ar5[i] is a String object
+ // ar5[2] is "and"
+ // ar5[2].length() is 3.
+ 
+     if (ar5[i].length()>5)
+         count5++;
+ }
+ 
+System.out.println(" TASK 12: is " + count5);
+ /*
+ * Boss Level Task 12. Create an array with just words
+ * of length greater than 5
+ */
+ k=0; // previously defined
+ String[] task12Greater= new String[count5];
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+     if (ar5[i].length() >5)
+     {
+         task12Greater[k]=ar5[i];
+         k++;
+     }
+ }
+ 
+ for (int i=0 ; i<task12Greater.length ; i++)
+ {
+     System.out.println(" 12 BOSS["+i+"] :"+task12Greater[i]);
+ }
+ 
         
         /*
          * Task 13
@@ -300,7 +351,20 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
+        System.out.println(" ** Task 13 **");
+        String [] monsterArray={ "Cookie", "Grover", "Oscar the Grouch","Elmo","Rosita"};
         
+        for (int i=0; i<monsterArray.length; i++)
+            System.out.println("["+i+"]" + monsterArray[i]);
+            
+         for (int i=0; i<monsterArray.length; i++)
+         {
+             char c= monsterArray[i].toLowerCase().charAt(0);
+             if (c=='a' || c=='e' | c=='i'|| c=='o'|| c=='u')
+             System.out.println(monsterArray[i]);
+            }
+        
+
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
@@ -326,6 +390,7 @@ class Main
           * fb[3]=fb[1]+fb[2]
           * fb[4]=fb[2]+fb[3]
           */
-        
+        }
     }
-}
+    
+ 
